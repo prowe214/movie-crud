@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add A Movie</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>
+    <a href="/movies/index">go back</a>
+    <h1>Add A Movie Review</h1>
+  </header>
+  <main>
+    <form action="/movies/index" method='POST'>
+      <label for="title">Title</label>
+        <input type="text" name='title' id='title'><br/>
+      <label for="director">Director</label>
+        <input type="text" name='director' id='director'><br/>
+      <label for="year">Year</label>
+        <input type="text" name='year' id='year'><br/>
+      <label for="rating">Rating</label>
+        <input type="text" name='rating' id='rating'><br/>
+      <label for="posterurl">Poster URL</label>
+        <input type="text" name='posterurl' id='posterurl'><br/>
+      <input class='button' type="submit" value="Add Movie">
+    </form>
+  </main>
+</body>
+</html>

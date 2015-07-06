@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  {{#movies}}
+  <h1>Edit {{title}}</h1>
+  <form action="/movies/{{_id}}/edit" method='POST'>
+    <label for="title">Title</label>
+      <input type="text" name='title' value='{{title}}' id='title'>
+    <label for="director">Director</label>
+      <input type="text" name='director' value='{{director}}' id='director'>
+    <label for="year">Year</label>
+      <input type="text" name='year' value='{{year}}' id='year'>
+    <label for="rating">Rating</label>
+      <input type="text" name='rating' value='{{rating}}' id='rating'>
+    <label for="posterurl">Poster URL</label>
+      <input type="text" name='posterurl' value='{{posterurl}}' id='posterurl'>
+    <input type="submit" value="Save Edits">
+  </form>
+  {{/movies}}
+</body>
+</html>

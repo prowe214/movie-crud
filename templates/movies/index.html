@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paul's Movie Reviews</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>
+    <a href="/movies">home</a>
+    <h1>Paul's Movie Reviews</h1>
+    <a href="/movies/new">New Movie</a>
+  </header>
+  <main>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Director</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th></th>
+        <th></th>
+      </tr>
+    {{#movies}}
+        <tr>
+          <td><a href="{{_id}}">{{title}}</a></td>
+          <td>{{director}}</td>
+          <td>{{year}}</td>
+          <td>{{rating}}</td>
+          <td>
+            <form action='/movies/{{_id}}/edit' method='GET'>
+              <input type="submit" class='button' value="Edit" >
+            </form>
+          </td>
+          <td>
+            <form action='/movies/{{_id}}/delete' method='POST'>
+              <input type="submit" class='button' value="Delete" >
+            </form>
+          </td>
+        </tr>
+    {{/movies}}
+    </table>
+  </main>
+</body>
+</html>

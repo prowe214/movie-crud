@@ -1,0 +1,69 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 20px 150px;
+}
+
+header a {
+  color: gray;
+}
+
+header a:visited {
+  color: gray;
+}
+
+main {
+  padding: 50px;
+}
+
+.splash {
+  background-image: url(http://www.gifwave.com/media/56626_zoolander-walk-off-blue-steel-magnum-derek-zoolander.gif);
+  background-repeat: repeat;
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {margin: 5px 0}
+
+.button {
+  background: gray;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+td>form {width: 100px;}
+
+td, th {border-bottom: 1px solid black;}
